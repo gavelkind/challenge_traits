@@ -1,0 +1,9 @@
+lonely = {
+    customizer = no
+    random = no
+}
+
+tiny = {
+    customizer = no
+    random = no
+}

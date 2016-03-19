@@ -1,0 +1,19 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_trait_lonely"
+        texturefile = "gfx/traits/trait_lonely.tga"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+
+    spriteType = {
+        name = "GFX_trait_tiny"
+        texturefile = "gfx/traits/trait_tiny.tga"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+
+}

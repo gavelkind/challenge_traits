@@ -1,0 +1,18 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+# Decisions
+show_challenge_traits_decision;Show challenge traits;;;;;;;;;x
+
+show_challenge_traits_decision_desc;Use this decision to mark rulers who are:\n* §YLonely§! (the only count+ ruler of their dynasty)\n* §YTiny§! (controls only one county)\n\nThen, type searches into the §GCharacter finder§! such as:\n* §Ytiny lonely§! to find a challenging starting character\n* §Ytiny [From.GetOnlyDynastyName]§! to find a new dynast to play when your character dies.\n\nThe following §GConsole commands§! may be useful for switching characters:\n* §Ycharinfo§!: Show numeric character IDs in tooltips\n* §Yplay 12345§!: Play as this character\n* §Yenable_ambition 12345§!: Undo AI choice of ambition\n* §Yclr_focus§!: Undo AI choice of focus\n* §Yobserve§!: Let the AI play for a generation;;;;;;;;;;;;;x
+
+# * §Yfow§!: Turn "fog of war" back on after leaving observe mode
+
+hide_challenge_traits_decision;Hide challenge traits;;;;;;;;;x
+
+hide_challenge_traits_decision_desc;Removes the §YLonely§! and §YTiny§! traits;;;;;;;;;x
+
+# Traits
+lonely;Lonely;;;;;;;;;;;;;x
+lonely_desc;The only count+ ruler of their dynasty;;;;;;;;;;;;;x
+tiny;Tiny;;;;;;;;;;;;;x
+tiny_desc;Controls only one county;;;;;;;;;;;;;x

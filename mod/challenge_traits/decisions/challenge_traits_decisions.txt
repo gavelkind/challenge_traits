@@ -1,0 +1,74 @@
+decisions = {
+
+    show_challenge_traits_decision = {
+        potential = {
+            ai = no
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            hidden_tooltip = {
+                any_playable_ruler = {
+                    limit = {
+                        # Skip non-playable government types
+                        is_theocracy = no
+                        is_republic = no
+
+                        # Skip merchant republics (this mod isn't needed if you want to find one)
+                        is_merchant_republic = no
+                        is_patrician = no
+
+                        # Skip landless adventurer hosts (even though ToG hosts are technically playable)
+                        is_landed = yes
+                    }
+                    if = {
+                        limit = {
+                            NOR = {
+                                any_vassal = { higher_tier_than = BARON  is_landed = yes }
+                                any_demesne_title = { count = 2  tier = COUNT }
+                            }
+                        }
+                        add_trait = tiny
+                    }
+                    if = {
+                        limit = {
+                            NOT = {
+                                any_dynasty_member = {
+                                    NOT = { character = PREV }
+                                    higher_tier_than = BARON
+                                    is_landed = yes
+                                }
+                            }
+                        }
+                        add_trait = lonely
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    hide_challenge_traits_decision = {
+        potential = {
+            ai = no
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            hidden_tooltip = {
+                any_playable_ruler = {
+                    remove_trait = tiny
+                    remove_trait = lonely
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+}
